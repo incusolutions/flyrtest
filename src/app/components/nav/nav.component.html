@@ -1,13 +1,14 @@
 
 
 <nav class="nav-menu">
-    <div class="container gridmenu">
+    <div class="containernav gridmenu">
         <div class="hamburgesamenu">
-           
-           <img src="./assets/img/menu.svg">
+            <img src="./assets/img/close.svg" *ngIf="themeservice.mobilemenu" (click)="themeservice.mobilemenu = !themeservice.mobilemenu">
+
+           <img src="./assets/img/menu.svg" *ngIf="!themeservice.mobilemenu" (click)="themeservice.mobilemenu = !themeservice.mobilemenu">
         </div>
         <div class="logo">
-            <img src="./assets/img/logo1.svg">
+            <img class="logoimg" src="./assets/img/logo1.svg">
         </div>
         <ul class="links">
             <li><a href="">Check-in</a></li>

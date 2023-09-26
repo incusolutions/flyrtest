@@ -13,12 +13,21 @@
   font-weight: 400
   font-style: normal
 
+@font-face 
+  font-family: 'Roboto2'
+  src: url('/assets/fonts/Roboto-Light.ttf') format('truetype')
+
+@font-face 
+  font-family: 'RobotoBold'
+  src: url('/assets/fonts/Roboto-Bold.ttf') format('truetype')
+
+
 
 
 body 
     width: 100%
     margin:0px
-    background:#fff
+    background:#F1F0FF
   
     font-family: Roboto
 
@@ -30,7 +39,127 @@ body
   max-width: 1200px
   margin: 0 auto
   box-sizing: border-box
- 
+
+.containernav
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+  box-sizing: border-box
+
+.gridcontainercols
+ display: grid
+ grid-template-columns: repeat(12, 1fr)
+ gap: 20px
+
+ @media (max-width: 768px) 
+  grid-template-columns: repeat(1, 1fr)
   
 
+.grid-item 
+ height: 258px
+
+
+.span-1 
+ grid-column: span 1
+
+.span-2 
+ grid-column: span 2
+
+.span-3 
+ grid-column: span 3
+
+.span-4 
+ grid-column: span 4
+
+.span-5 
+ grid-column: span 5
+
+.span-6 
+ grid-column: span 6
+
+.span-7 
+ grid-column: span 7
+
+.span-8 
+ grid-column: span 8
+
+.span-8 
+ grid-column: span 8
+
+.span-9 
+ grid-column: span 9
+
+.span-10 
+ grid-column: span 10
+
+.span-11 
+ grid-column: span 11
+
+.span-12
+ grid-column: span 12
+
+@media (max-width: 768px) 
+ .span-2
+  grid-column: span 12
+ .span-3
+  grid-column: span 12
+ .span-6
+  grid-column: span 12
+ .span-5
+  grid-column: span 12
+ .span-7
+  grid-column: span 12
+
+@media (max-width: 1200px) 
+ .container
+  padding:20px
+
+
+
+.title
+ padding: 30px 0px 30px 0px
+
+.p0
+  padding-top:0px !important
+
+  
+.load
+    position: fixed
+    top: 0px
+    width: 100%
+    background: #fff
+    height: 100%
+    left: 0
+    z-index: 1020
+    display: block
+
+    @media (min-width: 768px)
+     display: none
+    
+.insidemenu
+    color:#fff
+  
+    ul
+        list-style: none
+        padding: 0
+        margin: 0
+       
+        li
+          padding: 10px
+          margin-bottom: 15px
+          border-bottom:1px solid #B2B2C1
+
+          a
+            text-decoration: none
+            color: #181823
+          
+
+            &:hover
+                color: #007bff
+          
+
+
+   
+   
+ 
 
