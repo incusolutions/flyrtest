@@ -1,23 +1,27 @@
-
+<!-- componete baner -->
 <app-home-banner></app-home-banner>
 
+<!-- seccion offers -->
 <section class="offers">
     <div class="container">
        <div class="gridcontent-home">
+
            <div class="title">
                 <h1>Offers</h1>
            </div>  
+
+           <!-- se usa sistema de columnas -->
            <div class="gridcontainercols">
-              
+                <!-- se muestran las las 3 cards, se crea componente que recibe atributo de nombre y precio -->
                 <app-cards class="grid-item span-3" city="chicago" from="$600.00"></app-cards>
                 <app-cards class="grid-item span-6" city="porto"  from="$600.00"></app-cards>
                 <app-cards class="grid-item span-3" city="chicago2"  from="$600.00"></app-cards>
 
            </div>
-           <div>
-               
-                <app-cards-destinations></app-cards-destinations>
-           </div>
+                
+           <!-- componente carddestination -->
+           <app-cards-destinations></app-cards-destinations>
+          
        </div> 
 
        

@@ -7,6 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class CardsComponent {
 
+  // variables de entrada al componente
+
   @Input() city?: string ;
   @Input() classtype?: string ;
   @Input() from?: string ;

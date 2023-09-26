@@ -1,12 +1,15 @@
-<div class="load">
+<div class="load"  [ngClass]="{'visible': themeservice.mobilemenu}">
 
     <app-nav></app-nav>
-    
+   
     <div class="container insidemenu">
-        <ul >
-            <li><a href="">Check-in</a></li>
-            <li><a href="">Manage my booking</a></li>
-            <li><a href="">Information</a></li>
+
+        <div class="titlecontent">  
+            <span class="titlemobile">{{themeservice.tilelink}}</span>  
+        </div>
+    
+        <ul>
+           <li  *ngFor="let item of themeservice.menumobileroot; let i = index"><a (click)="changelinks(item.title)"> {{item.title}}</a></li>
         </ul>
     </div>
    

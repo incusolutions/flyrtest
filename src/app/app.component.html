@@ -1,4 +1,8 @@
-
+<!-- 
+   - componentes que no cambian: nav,footer
+   - componente menumobile se muestra cuando es necsario
+   - se crea servicio theme para trabajar estados y modelos para los links del menu
+-->
 <app-nav></app-nav>
 <app-menumobile *ngIf="themeservice.mobilemenu"></app-menumobile>
 <router-outlet></router-outlet>

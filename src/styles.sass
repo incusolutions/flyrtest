@@ -1,4 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'app/variablessass'
+
 *
     padding: 0
     margin: 0
@@ -6,6 +7,14 @@
     -webkit-box-sizing: border-box
     box-sizing: border-box
     max-width: 100%
+
+body 
+    width: 100%
+    margin:0px
+    background: $background-site
+    font-family: Roboto
+
+// tipografías
 
 @font-face 
   font-family: 'Roboto'
@@ -24,15 +33,9 @@
 
 
 
-body 
-    width: 100%
-    margin:0px
-    background:#F1F0FF
-  
-    font-family: Roboto
 
 
-
+// contenedores 
 
 .container 
   width: 100%
@@ -46,6 +49,9 @@ body
   margin: 0 auto
   box-sizing: border-box
 
+
+// sistema de grillas
+
 .gridcontainercols
  display: grid
  grid-template-columns: repeat(12, 1fr)
@@ -58,6 +64,7 @@ body
 .grid-item 
  height: 258px
 
+// sistema de columas
 
 .span-1 
  grid-column: span 1
@@ -98,6 +105,30 @@ body
 .span-12
  grid-column: span 12
 
+// load es el panel del menu para movil
+
+.load
+    position: fixed
+    top: 0px
+    width: 100%
+    background: #fff
+    height: 100%
+    left: 0
+    z-index: 1020
+    display: block
+
+    @media (min-width: 768px)
+     display: none
+
+// otros
+.title
+ padding: 30px 0px 30px 0px
+
+.p0
+  padding-top:0px !important
+
+// mediasqueris responsive del sistema de columnas
+
 @media (max-width: 768px) 
  .span-2
   grid-column: span 12
@@ -115,27 +146,8 @@ body
   padding:20px
 
 
-
-.title
- padding: 30px 0px 30px 0px
-
-.p0
-  padding-top:0px !important
-
   
-.load
-    position: fixed
-    top: 0px
-    width: 100%
-    background: #fff
-    height: 100%
-    left: 0
-    z-index: 1020
-    display: block
-
-    @media (min-width: 768px)
-     display: none
-    
+// lista de enlaces del menu y submenu movil
 .insidemenu
     color:#fff
   
@@ -152,8 +164,8 @@ body
           a
             text-decoration: none
             color: #181823
-          
-
+            cursor: pointer
+      
             &:hover
                 color: #007bff
           
