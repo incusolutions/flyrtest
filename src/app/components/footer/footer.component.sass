@@ -1,6 +1,7 @@
+@import '../../variablessass'
 .footer
    
-    background:#E7E6F6
+    background: $background-footer
      
     @media (max-width: 768px) 
      height: 100%
@@ -20,10 +21,10 @@
 
         a
             text-decoration: none
-            color: #181823
+            color: $a-color
         
             &:hover
-             color: #476ec9
+             color: $ahover-color
 
 
 .logofotter
@@ -52,6 +53,10 @@
 
         img
              width: 50px
+             @media (max-width: 768px) 
+              width: 50px!important
+             @media (max-width: 1200px) 
+              width: 28px
 
         li
             float: left
@@ -59,7 +64,7 @@
 
 
 .termuse
-    background:#F1F0FF
+    background: $background-minifooter
     margin-top: 30px
 
     ul
